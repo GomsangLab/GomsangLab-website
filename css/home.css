@@ -139,7 +139,7 @@ a {
 .contents .main-container .grid-container {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 24px 320px;
+    grid-template-columns: 1fr;
 }
 
 .contents .main-container .grid-container .background-image {
@@ -149,9 +149,24 @@ a {
     align-items: center;
 }
 
-.contents .main-container .grid-container .background-image {
+.contents .main-container .grid-container .award-content {
     height: 520px;
     background-color: #F9F3E4;
+    position: relative;
+}
+
+.contents .main-container .grid-container .award-content .title {
+    font-family: S-CoreDream-8Heavy, serif;
+    font-size: 1.1rem;
+    margin: 24px 32px 0 32px;
+    line-height: 1.5;
+}
+
+.contents .main-container .grid-container .award-content p {
+    font-family: S-CoreDream-3Light, serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 6px 32px 0 32px;
 }
 
 .more-button {
@@ -187,9 +202,10 @@ a {
 }
 
 .license {
-    position: absolute;
+    position: relative;
     bottom: 0;
-    margin-bottom: 56px;
+    margin-top: 36px;
+    margin-bottom: 36px;
 }
 
 .license p {
@@ -210,4 +226,15 @@ a {
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@media all and (min-width: 1200px) {
+    .contents .main-container .grid-container {
+        grid-template-columns: 1fr 24px 320px;
+    }
+
+    .license {
+        position: absolute;
+        margin-bottom: 56px;
+    }
 }
