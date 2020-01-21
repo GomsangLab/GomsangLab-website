@@ -52,7 +52,7 @@ a {
     height: 100%;
     align-items: center;
     justify-content: center;
-    padding: 0 16px;
+    padding: 0 24px;
 }
 
 .toolbar .toolbar-area .toolbar-left {
@@ -142,7 +142,7 @@ a {
     grid-template-columns: 1fr;
 }
 
-.contents .main-container .grid-container .divider{
+.contents .main-container .grid-container .divider {
     height: 16px;
 }
 
@@ -163,7 +163,7 @@ a {
 
 .contents .main-container .grid-container .background-image .filter .title {
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: 1.3rem;
     padding: 0;
     margin: 0;
     color: white;
@@ -172,7 +172,7 @@ a {
 .contents .main-container .grid-container .background-image .filter p {
     color: white;
     margin: 16px 0 0 0;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     line-height: 1.8;
 }
 
@@ -203,7 +203,7 @@ a {
     -webkit-user-drag: none;
     font-size: 0.7rem;
     text-align: center;
-    padding: 10px 14px;
+    padding: 12px 14px;
     height: 32px;
     background-color: #0F1614;
     cursor: pointer;
@@ -260,6 +260,14 @@ a {
         padding: 48px 0 0 48px;
     }
 
+    .contents .main-container .grid-container .background-image .filter .title {
+        font-size: 1.5rem;
+    }
+
+    .contents .main-container .grid-container .background-image .filter p {
+        font-size: 0.85rem;
+    }
+
     .contents .main-container {
         padding: 0 32px;
     }
@@ -268,7 +276,7 @@ a {
         padding: 0 32px;
     }
 
-    .contents .main-container .grid-container .divider{
+    .contents .main-container .grid-container .divider {
         height: 24px;
     }
 }
@@ -285,6 +293,14 @@ a {
 
     .contents .main-container .grid-container .background-image .filter {
         padding: 72px 0 0 72px;
+    }
+
+    .contents .main-container .grid-container .background-image .filter .title {
+        font-size: 1.75rem;
+    }
+
+    .contents .main-container .grid-container .background-image .filter p {
+        font-size: 0.95rem;
     }
 
     .toolbar {
