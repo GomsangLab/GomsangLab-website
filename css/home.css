@@ -161,7 +161,7 @@ a {
     background: rgba(0, 0, 0, 0.3)
 }
 
-.contents .main-container .grid-container .background-image .filter title {
+.contents .main-container .grid-container .background-image .filter .title {
     font-weight: 700;
     font-size: 1.75rem;
     padding: 0;
