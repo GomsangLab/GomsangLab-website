@@ -39,7 +39,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 108px;
+    height: 72px;
     z-index: 100;
     background-color: white;
     justify-content: center;
@@ -52,7 +52,7 @@ a {
     height: 100%;
     align-items: center;
     justify-content: center;
-    padding: 0 32px;
+    padding: 0 16px;
 }
 
 .toolbar .toolbar-area .toolbar-left {
@@ -125,7 +125,7 @@ a {
     height: 100%;
     z-index: 1;
     flex-grow: 1;
-    padding: 124px 0 0 0;
+    padding: 72px 0 0 0;
     position: absolute;
 }
 
@@ -133,7 +133,7 @@ a {
     width: 1700px;
     max-width: 100%;
     margin: auto;
-    padding: 0 56px;
+    padding: 0 16px;
 }
 
 .contents .main-container .grid-container {
@@ -147,6 +147,29 @@ a {
     background-size: cover;
     background-position: center;
     align-items: center;
+}
+
+.contents .main-container .grid-container .background-image .filter {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 32px 0 0 32px;
+    background: rgba(0, 0, 0, 0.3)
+}
+
+.contents .main-container .grid-container .background-image .filter title {
+    font-weight: 700;
+    font-size: 1.75rem;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.contents .main-container .grid-container .background-image .filter p {
+    color: white;
+    margin: 16px 0 0 0;
+    font-size: 0.95rem;
+    line-height: 1.8;
 }
 
 .contents .main-container .grid-container .award-content {
@@ -228,6 +251,20 @@ a {
     font-style: normal;
 }
 
+@media all and (min-width: 480px) {
+    .contents .main-container .grid-container .background-image .filter {
+        padding: 48px 0 0 48px;
+    }
+
+    .contents .main-container {
+        padding: 0 32px;
+    }
+
+    .toolbar .toolbar-area {
+        padding: 0 32px;
+    }
+}
+
 @media all and (min-width: 1200px) {
     .contents .main-container .grid-container {
         grid-template-columns: 1fr 24px 320px;
@@ -236,5 +273,21 @@ a {
     .license {
         position: absolute;
         margin-bottom: 56px;
+    }
+
+    .contents .main-container .grid-container .background-image .filter {
+        padding: 72px 0 0 72px;
+    }
+
+    .toolbar {
+        height: 108px;
+    }
+
+    .contents {
+        padding: 124px 0 0 0;
+    }
+
+    .contents .main-container {
+        padding: 0 56px;
     }
 }
