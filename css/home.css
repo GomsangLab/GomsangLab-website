@@ -147,7 +147,7 @@ a {
 }
 
 .contents .main-container .grid-container .background-image {
-    height: 520px;
+    height: 380px;
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -177,7 +177,7 @@ a {
 }
 
 .contents .main-container .grid-container .award-content {
-    height: 520px;
+    height: 380px;
     background-color: #F9F3E4;
     position: relative;
 }
@@ -256,6 +256,14 @@ a {
 }
 
 @media all and (min-width: 480px) {
+    .contents .main-container .grid-container .award-content {
+        height: 420px;
+    }
+
+    .contents .main-container .grid-container .background-image {
+        height: 420px;
+    }
+
     .contents .main-container .grid-container .background-image .filter {
         padding: 48px 0 0 48px;
     }
@@ -289,6 +297,14 @@ a {
     .license {
         position: absolute;
         margin-bottom: 56px;
+    }
+
+    .contents .main-container .grid-container .award-content {
+        height: 520px;
+    }
+
+    .contents .main-container .grid-container .background-image {
+        height: 520px;
     }
 
     .contents .main-container .grid-container .background-image .filter {
